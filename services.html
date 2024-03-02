@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Normalize File -->
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Main CSS Style -->
+    <link rel="stylesheet" href="CSS/master.css" />
+    <title>إقرأ - الخدمات</title>
+    <style>
+      /* Add your styles here */
+      .buying-sec,
+      .selling-sec,
+      .exchanging-sec {
+        display: none;
+      }
+
+      .buying-sec.active,
+      .selling-sec.active,
+      .exchanging-sec.active {
+        display: block;
+      }
+      #serviceNav a.active {
+        background-color: #d14031; /* Set the background color for active link */
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Start Header -->
+    <div class="header">
+      <div class="container">
+        <a href="index.html"
+          ><img class="logo" src="Image/UJ_logo.png" alt=""
+        /></a>
+        <div class="links">
+          <span class="icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <ul>
+            <li><a href="index.html"> الصفحة الرئيسية </a></li>
+            <li><a href="index.html#questions">الأسئلة</a></li>
+            <li><a href="#contact">تواصل معنا</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Choose Service -->
+    <div class="choose-service">
+      <div class="container">
+        <h2 class="title">اختر الخدمة</h2>
+        <nav id="serviceNav">
+          <a
+            href="#"
+            data-target="buying-sec"
+            onclick="showSection('buying-sec')"
+            >شراء</a
+          >
+          <a
+            href="#"
+            data-target="selling-sec"
+            onclick="showSection('selling-sec')"
+            >بيع</a
+          >
+          <a
+            href="#"
+            data-target="exchanging-sec"
+            onclick="showSection('exchanging-sec')"
+            >تبادل</a
+          >
+        </nav>
+      </div>
+    </div>
+    <!-- Buying -->
+    <div id="buying-sec" class="buying-selling-echangeing-sec buying-sec">
+      <div class="container">
+        <div class="book-card used">
+          <div class="image">
+            <img decoding="async" src="https://via.placeholder.com/200x320" alt="">
+          </div>
+          <div class="book-info">
+            <h3 class="book-name">اسم الكتاب</h3>
+            <h4 class="author-name">اسم المؤلف</h4>
+            <span class="price"> 100 <span class="sgin">ر.س.</span></span>
+          </div>
+        </div>
+        <div class="book-card used">
+          <div class="image">
+            <img decoding="async" src="https://via.placeholder.com/200x320" alt="">
+          </div>
+          <div class="book-info">
+            <h3 class="book-name">اسم الكتاب</h3>
+            <h4 class="author-name">اسم المؤلف</h4>
+            <span class="price"> 100 <span class="sgin">ر.س.</span></span>
+          </div>
+        </div>
+        <div class="book-card">
+          <div class="image">
+            <img decoding="async" src="https://via.placeholder.com/200x320" alt="">
+          </div>
+          <div class="book-info">
+            <h3 class="book-name">اسم الكتاب</h3>
+            <h4 class="author-name">اسم المؤلف</h4>
+            <span class="price"> 100 <span class="sgin">ر.س.</span></span>
+          </div>
+        </div>
+        <div class="book-card">
+          <div class="image">
+            <img decoding="async" src="https://via.placeholder.com/200x320" alt="">
+          </div>
+          <div class="book-info">
+            <h3 class="book-name">اسم الكتاب</h3>
+            <h4 class="author-name">اسم المؤلف</h4>
+            <span class="price"> 100 <span class="sgin">ر.س.</span></span>
+          </div>
+        </div>
+        <div class="book-card">
+          <div class="image">
+            <img decoding="async" src="https://via.placeholder.com/200x320" alt="">
+          </div>
+          <div class="book-info">
+            <h3 class="book-name">اسم الكتاب</h3>
+            <h4 class="author-name">اسم المؤلف</h4>
+            <span class="price"> 100 <span class="sgin">ر.س.</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Selling -->
+    <div id="selling-sec" class="buying-selling-echangeing-sec selling-sec">
+      <div class="title-sec"><button>اضافة كتاب للبيع</button></div>
+
+      <div class="container">
+        <div class="book-card used">
+          <div class="image">
+            <img decoding="async" src="https://via.placeholder.com/200x320" alt="">
+          </div>
+          <div class="book-info">
+            <h3 class="book-name">اسم الكتاب</h3>
+            <h4 class="author-name">اسم المؤلف</h4>
+            <span class="price"> 100 <span class="sgin">ر.س.</span></span>
+          </div>
+        </div>
+        <div class="book-card used">
+          <div class="image">
+            <img decoding="async" src="https://via.placeholder.com/200x320" alt="">
+          </div>
+          <div class="book-info">
+            <h3 class="book-name">اسم الكتاب</h3>
+            <h4 class="author-name">اسم المؤلف</h4>
+            <span class="price"> 100 <span class="sgin">ر.س.</span></span>
+          </div>
+        </div>
+        <div class="book-card">
+          <div class="image">
+            <img decoding="async" src="https://via.placeholder.com/200x320" alt="">
+          </div>
+          <div class="book-info">
+            <h3 class="book-name">اسم الكتاب</h3>
+            <h4 class="author-name">اسم المؤلف</h4>
+            <span class="price"> 100 <span class="sgin">ر.س.</span></span>
+          </div>
+        </div>
+        <div class="book-card">
+          <div class="image">
+            <img decoding="async" src="https://via.placeholder.com/200x320" alt="">
+          </div>
+          <div class="book-info">
+            <h3 class="book-name">اسم الكتاب</h3>
+            <h4 class="author-name">اسم المؤلف</h4>
+            <span class="price"> 100 <span class="sgin">ر.س.</span></span>
+          </div>
+        </div>
+        <div class="book-card">
+          <div class="image">
+            <img decoding="async" src="https://via.placeholder.com/200x320" alt="">
+          </div>
+          <div class="book-info">
+            <h3 class="book-name">اسم الكتاب</h3>
+            <h4 class="author-name">اسم المؤلف</h4>
+            <span class="price"> 100 <span class="sgin">ر.س.</span></span>
+          </div>
+        </div>
+        <div class="book-card">
+          <div class="image">
+            <img decoding="async" src="https://via.placeholder.com/200x320" alt="">
+          </div>
+          <div class="book-info">
+            <h3 class="book-name">اسم الكتاب</h3>
+            <h4 class="author-name">اسم المؤلف</h4>
+            <span class="price"> 100 <span class="sgin">ر.س.</span></span>
+          </div>
+        </div>
+        <div class="book-card">
+          <div class="image">
+            <img decoding="async" src="https://via.placeholder.com/200x320" alt="">
+          </div>
+          <div class="book-info">
+            <h3 class="book-name">اسم الكتاب</h3>
+            <h4 class="author-name">اسم المؤلف</h4>
+            <span class="price"> 100 <span class="sgin">ر.س.</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Exchanging -->
+    <div
+      id="exchanging-sec" class="buying-selling-echangeing-sec exchanging-sec" >
+      <div class="title-sec"><button>اضافة كتاب للتبادل</button></div>
+      <div class="container">
+        <div class="book-card used">
+          <div class="image">
+            <img decoding="async" src="https://via.placeholder.com/200x320" alt="">
+          </div>
+          <div class="book-info">
+            <h3 class="book-name">اسم الكتاب</h3>
+            <h4 class="author-name">اسم المؤلف</h4>
+            <div class="exchange-det">
+              <p>نوع التبادل: <span>مغامرة </span></p>
+            </div>
+
+            <span class="price"> 100 <span class="sgin">ر.س.</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Start Footer -->
+    <div id="contact" class="footer">
+      <div class="first">
+
+        <div class="links">
+          <ul>
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="second">
+        <div class="info">
+          <div class="address">
+            <i class="fa-solid fa-location-dot"></i>
+            <h3>جامعه جدة عسفان <span>المملكة العربية السعودية, جدة</span></h3>
+          </div>
+          <div class="phone">
+            <i class="fa-solid fa-phone-flip"></i>
+            <a href="tel:966555555555" class="phone-number">+966555555555</span> </a>
+          </div>
+          <div class="email">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:email@company.com">email@company.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Function to show a specific section
+      function showSection(sectionId) {
+        // Hide all sections
+        document
+          .querySelectorAll(".buying-sec, .selling-sec, .exchanging-sec")
+          .forEach((section) => {
+            section.classList.remove("active");
+          });
+
+        // Deactivate all links
+        document.querySelectorAll("#serviceNav a").forEach((link) => {
+          link.classList.remove("active");
+        });
+
+        // Show the selected section
+        document.querySelector(`.${sectionId}`).classList.add("active");
+
+        // Activate the clicked link
+        document
+          .querySelector(`#serviceNav a[data-target="${sectionId}"]`)
+          .classList.add("active");
+      }
+
+      // Check if there's a hash in the URL
+      const hash = window.location.hash.substr(1);
+      if (hash === "selling-sec" || hash === "exchanging-sec") {
+        // Show the section based on the hash
+        showSection(hash);
+      } else {
+        // Show "Buying" section by default
+        showSection("buying-sec");
+      }
+    </script>
+  </body>
+</html>
